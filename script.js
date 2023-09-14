@@ -40,12 +40,23 @@ function intentar(){
         }
         GRID.appendChild(ROW)
         if (INTENTO === palabra ) {
-            terminar("<h1>GANASTE!😀</h1>")
+            terminar("<h1>GANASTE!😀</h1> <button id='tryagain' onclick='location.reload()'>Volver a jugar</button>")
             return
         }
         intentos--;
         if (intentos==0){
-            terminar("<h1>PERDISTE!😖</h1>")
+            const GRID = document.getElementById("grid");
+            const ROW = document.createElement('div');
+            ROW.className = 'row';
+            terminar("<h1>PERDISTE!😖</h1> <button id='tryagain' onclick='location.reload()'>Volver a jugar</button>")
+            for (let i in palabra){
+                const SPAN = document.createElement('span');
+                SPAN.className = 'letter';
+                SPAN.innerHTML = palabra[i];
+                SPAN.style.backgroundColor = '#9c2c2cac';
+                ROW.appendChild(SPAN)
+            }
+            GRID.appendChild(ROW)
         }
     }else{
         ERROR.style.display = 'block';

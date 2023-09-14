@@ -86,3 +86,15 @@ body {
     justify-content: center; /* Centra verticalmente */
     text-align: center; /* Centra el contenido de texto horizontalmente */
   }
+
+  #tryagain{
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #0CBABA;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 30px;
+  }
