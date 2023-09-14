@@ -25,6 +25,7 @@ body {
     color: #fff;
     border: none;
     border-radius: 3px;
+    margin-bottom: 30px;
   }
      
   button:active {
@@ -42,9 +43,21 @@ body {
      
   .row{
       margin-bottom: 10px;
+      flex-direction: column;
+      align-items: center; /* Centra horizontalmente */
+      justify-content: center; /* Centra verticalmente */
+      text-align: center; /* Centra el contenido de texto horizontalmente */
   }
      
   .input-area{
       margin: 30px;
+  }
+
+  .grid{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente */
+    text-align: center; /* Centra el contenido de texto horizontalmente */
   }
  
